@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "74de51c1-2bb5-4305-9692-d353a6616727",
+		"name": "Roulette",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "new roulette",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51271/api/roulette/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51271",
+					"path": [
+						"api",
+						"roulette",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all roulette",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51271/api/roulette",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51271",
+					"path": [
+						"api",
+						"roulette"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activate roulette",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51271/api/roulette/activate/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51271",
+					"path": [
+						"api",
+						"roulette",
+						"activate",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "close Roulette",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51271/api/roulette/close/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51271",
+					"path": [
+						"api",
+						"roulette",
+						"close",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Amount\": 9000,\n\t\"MyBet\": \"12\",\n\t\"IdRoulette\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51271/api/roulette/bet/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51271",
+					"path": [
+						"api",
+						"roulette",
+						"bet",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
